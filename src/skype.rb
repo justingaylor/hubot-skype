@@ -5,13 +5,18 @@ require 'skypekit'
 require 'json'
 require 'redis'
 
+# Required variables:
+# HUBOT_SKYPE_KEYPAIR
+# HUBOT_SKYPE_USERNAME
+# HUBOT_SKYPE_PASSWORD
+
 $redis = Redis.new
 $redis
 
-$skype = Skypekit::Skype.new(:keyfile => './keypair.pem')
+$skype = Skypekit::Skype.new(:keyfile => ENV['HUBOT_SKYPE_KEYPAIR'])
 
 $skype.start
-$skype.login(skype_username, skype_password)
+$skype.login(ENV['HUBOT_SKYPE_USERNAME'], ENV['HUBOT_SKYPE_PASSWORD'])
 
 def terminate
   puts "Terminating"
