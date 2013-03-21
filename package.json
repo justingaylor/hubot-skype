@@ -8,7 +8,7 @@
   "description": "A Skype adapter written in Ruby for hubot",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hahuang65/hubot-skype.git"
+    "url": "git://github.com/justingaylor/hubot-skype.git"
   },
   "dependencies": {
     "redis": ">=0.7.2",
