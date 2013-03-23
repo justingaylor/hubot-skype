@@ -1,10 +1,16 @@
-GEM
+GIT
+  remote: git://github.com/justingaylor/skypekit.git
+  revision: ad6500e62b030c2c6fc10c5af0f9b24ca571ee46
   specs:
-    ffi (1.2.0)
-    json (1.7.5)
-    redis (3.0.2)
     skypekit (0.0.2)
       ffi (>= 1.0.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ffi (1.5.0)
+    json (1.7.5)
+    redis (3.0.2)
 
 PLATFORMS
   ruby
@@ -12,4 +18,4 @@ PLATFORMS
 DEPENDENCIES
   json
   redis
-  skypekit
+  skypekit!
